@@ -1,6 +1,5 @@
 import * as winston from "winston";
 import { Logger } from "winston";
-import { ENVIRONMENT } from "./config/app";
 
 const logger = new (Logger)({
 	transports: [

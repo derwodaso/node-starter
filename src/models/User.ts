@@ -1,8 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
-
-@Entity()
-export class User {
-
-	@PrimaryGeneratedColumn()
+export interface User {
 	id: number;
+	username?: string;
 }

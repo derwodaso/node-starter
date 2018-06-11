@@ -1,0 +1,28 @@
+{
+    "name": "default",
+	"type": "mysql",
+	"host": "localhost",
+	"port": 3306,
+	"username": "root",
+	"password": "!6h5g4f3d",
+	"database": "lonely_mountains",
+	"synchronize": true,
+	"logging": false,
+	"entities": [
+		"data/entity/*.js",
+		"dist/data/entity/*.js"
+	],
+	"subscribers": [
+		"data/subscriber/*.js",
+		"dist/data/subscriber/*.js"
+	],
+	"migrations": [
+		"data/migration/*.js",
+		"dist/data/subscriber/*.js"
+	],
+	"cli": {
+		"entitiesDir": "data/entity",
+		"migrationsDir": "data/migration",
+		"subscribersDir": "data/subscriber"
+	}
+}
